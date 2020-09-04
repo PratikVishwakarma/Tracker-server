@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json()) // parse the json request body before calling routes 
 app.use(authRoutes)
 
-const mongoUri = 'mongodb+srv://admin:admin123@cluster0.jdids.mongodb.net/test?retryWrites=true&w=majority'
+const mongoUri = 'mongodb+srv://admin:<password>@cluster0.jdids.mongodb.net/test?retryWrites=true&w=majority'
 
 mongoose.connect(mongoUri, {
     useNewUrlParser: true,
